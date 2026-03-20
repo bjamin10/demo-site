@@ -4,25 +4,130 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Get in Touch!</title>
-<!-- Optional: Link to your CSS stylesheet if you have one -->
-<!-- <link rel="stylesheet" href="styles.css" /> -->
+<!-- Google Fonts for a modern look -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
 <style>
   body {
     font-family: 'Open Sans', Arial, sans-serif;
     margin: 0;
-    padding: 20px;
     background-color: #fafafa;
     color: #333;
   }
-  h1 {
+
+  header {
+    background: #2C3E50;
+    color: white;
+    padding: 30px 20px;
     text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+
+  header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #34495E;
+  }
+
+  .section {
+    margin-bottom: 50px;
+  }
+
+  .card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 14px 24px;
+    background: #2C3E50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background 0.3s;
+  }
+
+  .button:hover {
+    background: #34495E;
+  }
+
+  footer {
+    background: #ecf0f1;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+    .button {
+      padding: 12px 20px;
+    }
   }
 </style>
 </head>
 <body>
 
-<h1>My Custom Page 2</h1>
-<p>This is a blank page for you to customize.</p>
+<header>
+  <h1>Get in touch with us!</h1>
+  <p>Fill out this short form and we will send you an email with details in 3-4 business days.</p>
+</header>
 
-</body>
-</html>
+<div class="container">
+
+  <div class="section" id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <form action="submit_form.php" method="post" style="display: flex; flex-direction: column; gap: 10px;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;"></textarea>
+
+      <button type="submit" class="button" style="width: auto; align-self: flex-start;">Send Message</button>
+    </form>
+  </div>
+</div>
+  </div>
