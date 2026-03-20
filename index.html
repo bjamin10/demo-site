@@ -1,118 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Local Business Web Solutions</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        header {
-            background: #111;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-        h1, h2 {
-            margin-bottom: 10px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .button {
-            display: inline-block;
-            padding: 12px 18px;
-            background: #111;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            margin-top: 10px;
-        }
-        .button:hover {
-            background: #333;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #eee;
-            margin-top: 40px;
-        }
-    </style>
-</head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Local Business Web Solutions</title>
+<!-- Google Fonts for a modern look -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+<style>
+  body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    background-color: #fafafa;
+    color: #333;
+  }
 
+  header {
+    background: #2C3E50;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+
+  header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #34495E;
+  }
+
+  .section {
+    margin-bottom: 50px;
+  }
+
+  .card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 14px 24px;
+    background: #2C3E50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background 0.3s;
+  }
+
+  .button:hover {
+    background: #34495E;
+  }
+
+  footer {
+    background: #ecf0f1;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+    .button {
+      padding: 12px 20px;
+    }
+  }
+</style>
+</head>
 <body>
 
 <header>
-    <h1>Simple Web Solutions</h1>
-    <p>I help small businesses get more customers with better websites</p>
+  <h1>Simple Web Solutions</h1>
+  <p>Helping small businesses grow with professional websites</p>
 </header>
 
 <div class="container">
 
-    <div class="section">
-        <h2>What I Do</h2>
-        <div class="card">
-            <p>I design and improve websites for small businesses so they look more professional and are easier for customers to use.</p>
-        </div>
+  <div class="section" id="what-i-do">
+    <h2>What I Do</h2>
+    <div class="card">
+      <p>I design and enhance websites for small businesses to ensure they look professional, modern, and user-friendly.</p>
     </div>
+  </div>
 
-    <div class="section">
-        <h2>Services</h2>
-        <div class="card">
-            <ul>
-                <li>Website Design</li>
-                <li>Website Redesign</li>
-                <li>Basic Automation Setup</li>
-            </ul>
-        </div>
+  <div class="section" id="services">
+    <h2>Services</h2>
+    <div class="card">
+      <ul>
+        <li>Website Design & Development</li>
+        <li>Website Redesign</li>
+        <li>Automation & Optimization</li>
+      </ul>
     </div>
+  </div>
 
-    <div class="section">
-        <h2>Why Choose Me</h2>
-        <div class="card">
-            <ul>
-                <li>Fast turnaround</li>
-                <li>Affordable pricing</li>
-                <li>Simple, clean designs</li>
-            </ul>
-        </div>
+  <div class="section" id="why-choose-me">
+    <h2>Why Choose Me</h2>
+    <div class="card">
+      <ul>
+        <li>Fast turnaround times</li>
+        <li>Affordable, transparent pricing</li>
+        <li>Clean, modern design principles</li>
+      </ul>
     </div>
+  </div>
 
-    <div class="section">
-        <h2>Contact</h2>
-        <div class="card">
-            <p>Email: your@email.com</p>
-            <a class="button" href="#">Get Started</a>
-        </div>
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+      <a class="button" href="#">Get Started</a>
     </div>
+  </div>
 
-    <div class="section">
-        <h2>Reminder</h2>
-        <div class="card">
-            <p>Hope you have a good day </p>
-            <a class="button" href="#"> Click this </a>
-        </div>
+  <div class="section" id="reminder">
+    <h2>Reminder</h2>
+    <div class="card">
+      <p>Hope you have a great day!</p>
+      <a class="button" href="#">Click this</a>
     </div>
+  </div>
 
 </div>
 
 <footer>
-    <p>© 2026 Simple Web Solutions</p>
+  <p>&copy; 2026 Simple Web Solutions</p>
 </footer>
 
 </body>
