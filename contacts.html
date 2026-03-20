@@ -13,7 +13,7 @@
     background-color: #fafafa;
     color: #333;
   }
-
+  
   header {
     background: #2C3E50;
     color: white;
@@ -102,17 +102,33 @@
       padding: 12px 20px;
     }
   }
+  .tab {
+  padding: 10px 20px;
+  background-color: #2C3E50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1em;
+  }
+
+.tab:hover {
+  background-color: #34495E;
+  }
+  
 </style>
 </head>
 <body>
 
 <header>
+  <nav style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+    <a class="tab" href="index.html">Home</a>
+    <a class="tab" href="#contacts.html">Contact</a>
+  </nav>
   <h1>Get in touch with us!</h1>
   <p>Fill out this short form and we will send you an email with details in 3-5 business days.</p>
-  <nav style="margin-top: 20px; display: flex; justify-content: center; gap: 20px;">
-    <a class="tab" href="index.html">Home</a>
-    <a class="tab" href="contacts.html">Contact</a>
-  </nav>
 </header>
 
 <div class="container">
